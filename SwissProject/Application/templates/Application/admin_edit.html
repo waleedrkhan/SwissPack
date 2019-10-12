@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/media/static/css/admin_edit.css">
+</head>
+<body>
+    <h1>Admin Pannel</h1>
+    <div class="edit-section">
+        <div class="left-section" >
+            <form action="{% url 'edit_html' %}" method="POST"> {% csrf_token %}
+
+            {% for item in h1 %}
+            <h2>Edit H1 <input name = 'h1' class='_h1' type="text" value={{item}}> </h2>
+            {% endfor %}
+            {% for item in h2 %}
+            <h2>Edit H2 <input name ='h2' type="text" value ={{item}} name="" id=""> </h2>
+            {% endfor %}
+            {% for item in h4 %}
+            <h2>Edit h4 <input name ='h4' type="text" value={{item}}> </h2>
+            {% endfor %}
+            {% for item in para %}
+            <h2>Edit paragraph <input name ='para' type="text" value={{item}}> </h2>
+            {% endfor %}
+
+            <!-- <h2>Add Image <input type="image" name="" id=""></h2>
+            <h2>Add url <input type="url"> </h2> -->
+            <input type="submit" value="Submit">
+        </form>
+
+        </div>
+        <div class="right-section">
+            <h2>List of Pages</h2>
+            <form action="{% url 'edit_html' %}" method="GET">
+            <ul class="page-list">
+                {% for item in data %}
+                <li><button type="submit" name="name" value={{item}}>{{item}}</button></li>
+                {% endfor %}
+            </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

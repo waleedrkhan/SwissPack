@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+body {
+  width: 1920px;
+  background-color: lightgrey;
+}
+
+.edit-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 40%;
+      grid-template-columns: 50% 40%;
+}
+
+h1 {
+  font-family: open sans;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.left-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.left-section h2 {
+  font-family: open sans;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.right-section h2 {
+  font-family: open sans;
+  font-size: 20px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

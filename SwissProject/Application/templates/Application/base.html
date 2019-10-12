@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/media/static/css/base.css">
+</head>
+<body>
+        <div class="header-grid">
+                <img src="/media/static/images/Group 30.svg" alt="swiss pack" height="" width="">
+                <div class="link-grid">
+                    <div class="home">
+                        <h2><a href="{% url 'index' %}">Home</a></h2>
+                        <div class="tl1"></div>
+                    </div>
+                    <div class="product">
+                        <h2><a href="{% url 'products' %}">Products</a></h2>
+                            <div class="tl1"></div>
+                        </div>
+                        <div class="industry">
+                            <h2><a href="{% url 'industries' %}">Industries</a></h2>
+                                <div class="tl1"></div>
+                            </div>
+                            <div class="swiss-pack">
+                                    <h2><a href="{% url 'swiss-labs' %}">Swiss Labs</a></h2>
+                                    <div class="tl1"></div>
+                                </div>
+                                <div class="about">
+                                    <h2><a href="{% url 'aboutus' %}">About Us</a></h2>
+                                        <div class="tl1"></div>
+                                    </div>
+                                    <div class="news">
+                                            <h2>News</h2>
+                                            <div class="tl1"></div>
+                                        </div>
+                                        <div class="contact">
+                                                <h2>Contact</h2>
+                                                <div class="tl1"></div>
+                                            </div>
+                                            <div class="store">
+                                                    <h2>Store</h2>                                        </div>
+        
+                </div>
+                <div class="icon-grid1">
+                    <a  href="{% url 'signup' %}"><img src="/media/static/images/Group 32.svg" alt="login" width="" height="" class="log" ></a>
+                        <img src="/media/static/images/Group 33.svg" alt="search" width="" height="" class="search">
+                    </div>
+            
+            
+                </div>
+                    {% block content %}
+                    {% endblock %}
+                    {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                        <p  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </p>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                <div class="swiss-advertise">
+                        <div class="careers">
+                            <img src="/media/static/images/Path 5737.png" alt="">
+                            <h2> Career's at Swiss Pack</h2>
+                            <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                        </div>
+                        <div class="better-world">
+                            <img src="/media/static/images/Path 5738.png" alt="">
+                
+                            <h2>Building a better World</h2>
+                            <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                        </div>
+                        <div class="reseller">
+                            <img src="/media/static/images/Path 5739.png" alt="">
+                            <h2>Resellers & Agents</h2>
+                            <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                        </div>
+                
+                    </div>
+                
+                <div class="contact-info">
+                
+                    <div class="box1">
+                        <h2>Ask <br>Swiss Pack</h2>
+                        <p>Check out our FAQs we've added as many as we can!</p>
+                        <div class="box1-grid1">
+                        <button >FAQ's</button>
+                        <img src="/media/static/images/Group 745.svg" alt="">
+                    </div>
+                    </div>
+                    <div class="box2">
+                        <h2>Call us for a <br> Free Quote</h2>
+                        <p>Find your regional office in Europe: UK, France, Italy, Spain, Romania & Poland</p>
+                        <p>UK: +44(0) 208 427 9944</p>
+                
+                        <div class="box2-grid1">
+                
+                        <button>Other Regions</button>
+                        <img src="/media/static/images/Group 1035.svg" alt="">
+                        </div>
+                    </div>
+                    <div class=" box3">
+                        <h2>Order Free Samples</h2>
+                        <p>Test our samples with your product, to better understand sizing, filling & finishes!</p>
+                        <div class="box3-grid1">
+                
+                        <button>Get Samples</button>
+                        <img src="/media/static/images/Group 1034.svg" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="box4">
+                        <h2>Keep up to date with our News</h2>
+                        <input type="text" name="" id="" placeholder="Email Address" >
+                        <button>Subscribe</button>
+                        <div class="box4-grid1">
+                        <button class="bt2">View Article</button>
+                
+                        <img src="/media/static/images/Group 785.svg" alt=""> </div>
+                
+                    </div>
+                
+                </div>
+
+
+                <div class="footer-boundry">
+
+                    <div class="footer-contact">
+                        <h4>CONTACT POUCH SHOP</h4>
+                        <p>+44 (0)208 427 9944 info@pouchshop.co.uk Icone House Unit 1, Rosslyn Crescent London, Harrow HA1 2SU</p>
+                    </div>
+                    <div class="footer-service">
+                        <H4>CUSTOMER SERVICE</H4>
+                        <P>Contact Us Payment & Orders Delivery FAQ</P>
+                    </div>
+                    <div class="footer-info">
+                    <H4>INFORMATION</H4>
+                    <P>About Pouch Shop Work With Us Privacy Policy Cookie Policy Terms & Conditions Samples Custom Print</P>
+                    </div>
+                    <div class="footer-stock">
+                        <H4> STOCK CATEGORIES</H4>
+                        <P>ECO Packaging Chocolate Bar Packaging Flat Bottom Pouches Stand Up Pouches Spout Pouches Tine Tie Bags Heat Sealers Coffee Bags Jerky Bags Scoops</P>
+                    </div>
+                    <div class="footer-subscribe">
+                        <H4>Subscribe to Swiss Pack via Email</H4>
+                        <P>Sign up to our monthly newsletter! Packed with industry trends (We will only send 1 email a month!)</P>
+                        <input type="text">
+                        <h4>Connect with us</h4>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+
+
+                </div>
+
+    
+</body>
+</html>
