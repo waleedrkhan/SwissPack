@@ -17,6 +17,6 @@ urlpatterns = [
     path('signup/', views.signup, name='signup'),
     path('babyfood/', views.babyfood, name='babyfood'),
     path('productpage/', views.productpage, name='productpage'),
-    path('swiss-item/', views.item, name="item")
+    path('swiss-item/', views.item_function, name="item_function")
 
 ]+ static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)

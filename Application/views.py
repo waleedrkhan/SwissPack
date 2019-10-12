@@ -135,7 +135,7 @@ def babyfood(request):
 def productpage(request):
     return render (request, 'Application/productpage.html')
 
-def item(request):
+def item_function(request):
     return render (request, 'Application/object.html')
 
 def swiss_products(request):
