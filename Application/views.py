@@ -135,6 +135,9 @@ def babyfood(request):
 def productpage(request):
     return render (request, 'Application/productpage.html')
 
+def item(request):
+    return render (request, 'Application/object.html')
+
 def swiss_products(request):
     data = Products.objects.all()
     obj = Products.objects.get(name='car')
