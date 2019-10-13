@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+body {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 4492px;
+  padding: 0%;
+  background-color: #ffffff;
+}
+
+.header-grid {
+  margin-top: 3%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+}
+
+.header-grid img {
+  margin-left: 50%;
+}
+
+.header-grid .link-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-top: 3%;
+  font-family: open sans;
+  font-weight: 100;
+  margin-left: 8%;
+}
+
+.header-grid .link-grid .home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .home h2 {
+  font-weight: 800;
+}
+
+.header-grid .link-grid h2 {
+  margin-top: 0%;
+  color: #0264A5;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.header-grid .link-grid .tl1 {
+  height: 27px;
+  margin-left: 20%;
+  width: 5%;
+  border-left: 2px solid  #707070;
+  -webkit-transform: skew(-8deg);
+          transform: skew(-8deg);
+}
+
+.header-grid .link-grid .product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .industry {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .swiss-pack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-grid .link-grid .store {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+.header-grid .link-grid .store h2 {
+  color: #D96868 !important;
+}
+
+.header-grid .icon-grid1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 15%;
+      grid-template-columns: 15% 15%;
+  padding: 0%;
+}
+
+.header-grid .icon-grid1 .log {
+  margin-top: 30%;
+  padding-left: 50%;
+}
+
+.header-grid .icon-grid1 .search {
+  margin-top: 30%;
+}
+
+.header-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-left: 22%;
+  margin-top: 2%;
+}
+
+.overlay1-blue {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-left: -2%;
+  margin-top: 1.5%;
+}
+
+.overlay-top {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.overlay2-picture {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.overlay3-darkblue {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.overlay1-productr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.header-img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.productr-overlay {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 538px;
+  height: 300px;
+  background-color: #ffffff;
+  margin-top: 7%;
+  font-family: open sans;
+  margin-left: 8%;
+  -webkit-transform: skew(-5deg);
+          transform: skew(-5deg);
+}
+
+.product-description {
+  width: 88%;
+  height: 35%;
+  font-family: open sans;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 100;
+  color: #14578C;
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+  margin-left: 2%;
+  margin-top: -6%;
+}
+
+.header-gsbutton {
+  width: 20%;
+  height: 10%;
+  text-align: center;
+  border: 1px solid #14588D;
+  border-radius: 10px;
+  font-family: open sans;
+  font-weight: 600;
+  font-size: 12px;
+  color: #14588D;
+  background: transparent;
+  margin-left: 5%;
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+  opacity: 1;
+}
+
+.productr-heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-top: 2%;
+  margin-left: 2%;
+  font-size: 25px;
+  font-family: raleway;
+  color: #14588D;
+}
+
+.productr-heading-overlay {
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+}
+
+.productr-heading-overlay1 {
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+  margin-left: -7%;
+  font-weight: 100;
+}
+
+/* .upperbody{
+        display: grid;
+        grid-template-columns: auto auto ;
+    }
+
+   .solutions-ub{
+       grid-column: 1/span 2;
+       grid-row: 1;
+
+    }
+
+    .microwaveable-ub{
+        grid-column: 1/span 2;
+        grid-row:2;
+
+    }
+
+    .productlist1{
+        display :grid;
+        grid-template-columns: auto auto auto auto auto ;
+    }
+    .sample-product1{
+        grid-column: 1/span 1;
+       grid-row: 1;
+
+    }
+
+    .sample-product2{
+        grid-column: 2/span 2;
+       grid-row: 1;
+
+    }
+    .sample-product3{
+        grid-column: 3/span 3;
+       grid-row: 1;
+
+    }
+    .sample-product4{
+        grid-column: 1/span 1;
+       grid-row: 2;
+
+    }
+    .sample-product5{
+        grid-column: 2/span 2;
+       grid-row: 2;
+
+    }
+    .sample-product6{
+        grid-column: 3/span 3;
+       grid-row: 2;
+
+    }
+
+    .solutions-ub{
+        display: grid;
+        grid-template-columns: 10% 80%;
+    }
+
+   /* .solutions-ub-list{
+        grid-column: 1/ span 1;
+        grid-row: 1;
+    }
+    .productlist1{
+        grid-column: 2/ span 2;
+        grid-row: 1;
+    }*/
+.upperbody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  grid-gap: 5%;
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+.solution-ub-list h2 {
+  font-weight: 700;
+  font-family: montserrat;
+  font-size: 25px;
+  color: #0264A5;
+  width: 80%;
+}
+
+.solution-ub-list p {
+  font-size: 16px;
+  font-family: open sans;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.solution-ub-list button {
+  border: 1px solid #0071BC;
+  border-radius: 10px;
+  width: 40%;
+  height: 5%;
+  font-family: open sans;
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent;
+  color: #0071BC;
+}
+
+.product-list1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+}
+
+.product-list1 h2 {
+  margin-top: -5%;
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0264A5;
+}
+
+.product-list1 p {
+  margin-top: -3%;
+  width: 80%;
+  height: 1%;
+  font-family: open sans;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #707070;
+}
+
+.microwave-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  grid-gap: 5%;
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+.micro-tag {
+  margin-top: 20%;
+}
+
+.micro-tag h2 {
+  font-weight: 700;
+  font-family: montserrat;
+  font-size: 25px;
+  color: #0264A5;
+  width: 80%;
+}
+
+.product-list2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+}
+
+.product-list2 h2 {
+  margin-top: -5%;
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0264A5;
+}
+
+.product-list2 p {
+  margin-top: -3%;
+  width: 80%;
+  height: 1%;
+  font-family: open sans;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #707070;
+}
+/*# sourceMappingURL=main.css.map */

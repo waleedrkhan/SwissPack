@@ -1,0 +1,85 @@
+{% extends "./base.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products::SwissPack</title>
+    <link rel="stylesheet" href="/media/static/css/products.css">
+</head>
+    <div class="overlay1-productr">
+    <div class="header-img">
+        <img src="/media/static/images/Path 5735.svg" alt="" class="overlay1-blue">
+        <div class="overlay-top">
+        <img src="/media/static/images/Path 5727.png" alt=""  class= "overlay2-picture">
+        <img src="/media/static/images/Path 5732.svg" alt="" class= "overlay3-darkblue">
+        </div>
+    </div>
+    <div class="productr-overlay">
+        <div class="productr-heading" >
+        <h1 class="productr-heading-overlay" >PRODUCT</h1>
+        <h1 class="productr-heading-overlay1">RANGES</h1>
+        </div>
+        <p class="product-description">A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+        <button class="header-gsbutton"> Get Sample</button>
+
+    </div>
+    </div>
+
+    <div class="upperbody">
+        <div class="solution-ub-list">
+        <h2 > Solutions designed for all your needs </h2>
+        <p>Flexible packaging is our craft, from custom shaped and printed packaging to stock items, each item is manufactured to the same high quality standard. We offer 40 Years of design and operational expertise to provide you packaging that elevates your product.</p>
+        
+        <button> Custom Prints</button>
+        </div>
+        <div class="product-list1">
+            {% for item in data %}
+                <div class="sample-product1">
+                        <img src="{{item.photo.url}}" height="200px" width="200px"><br><br>
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.description}}</p>
+                </div>
+            {% endfor %}
+        </div>
+</div>
+
+<div class="microwave-body">
+    <div class="micro-tag">
+    <h2>Microwaveable</h2>
+</div>
+    <div class="product-list2">
+            <div class="sample-product7">
+
+            <img src="/media/static/images/Rectangle 1179.png" alt="">
+            <h2><a href="{% url 'productpage' %}">Swiss Liteasdasd</a></h2>
+            <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+        </div>
+        <div class="sample-product8">
+                <img src="/media/static/images/Rectangle 1179.png" alt="">
+                <h2>Swiss Doy</h2>
+                <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+            </div>
+            <div class="sample-product9">
+                    <img src="/media/static/images/Rectangle 1179.png" alt="">
+                    <h2>Swiss Tasche</h2>
+                    <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                </div>
+                <div class="sample-product10">
+                        <img src="/media/static/images/Rectangle 1179.png" alt="">
+                        <h2>Swiss Gusset</h2>
+                        <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                    </div>
+                    <div class="sample-product11">
+                            <img src="/media/static/images/Rectangle 1179.png" alt="">
+                            <h2>Swiss Kraft</h2>
+                            <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                        </div>
+                        <div class="sample-product12">
+                                <img src="/media/static/images/Rectangle 1179.png" alt="">
+                                <h2> Swiss Aqua</h2>
+                                <p>A leading manufacturer in flexible packaging, Established for over 40 Years, we're trusted by the biggest consumer brands!</p>
+                            </div>
+                            </div>
+    </div>
+    {% endblock %}
