@@ -145,6 +145,12 @@ def swiss_products(request):
     context = {'data':data}
     return render(request, 'Application/products.html', context)
 
+def material(request):
+    return render(request, 'Application/material.html')
+
+def design(request):
+    return render(request, 'Application/design.html')
+
 def update_html(f_name, **kwargs):
     with open ('Application/templates/Application/{}'.format(f_name)) as f:
         contents = f.read()
