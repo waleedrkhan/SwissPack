@@ -151,6 +151,9 @@ def material(request):
 def design(request):
     return render(request, 'Application/design.html')
 
+def services(request):
+    return render(request, 'Application/services.html')
+
 def update_html(f_name, **kwargs):
     with open ('Application/templates/Application/{}'.format(f_name)) as f:
         contents = f.read()

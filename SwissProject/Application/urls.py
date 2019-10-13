@@ -20,5 +20,6 @@ urlpatterns = [
     path('swiss-item/', views.item_function, name="item_function"),
     path('material/', views.material, name="material"),
     path('design/', views.design, name="design"),
+    path('services/', views.services, name='services'),
 
 ]+ static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
