@@ -16,6 +16,7 @@ urlpatterns = [
     path('page-edit/<str:name>', views.edit_html, name='edit_html'),
     path('signup/', views.signup, name='signup'),
     path('babyfood/', views.babyfood, name='babyfood'),
-    path('productpage/', views.productpage, name='productpage')
+    path('productpage/', views.productpage, name='productpage'),
+    path('swiss-item/', views.item_function, name="item_function")
 
 ]+ static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
